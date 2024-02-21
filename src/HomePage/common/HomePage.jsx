@@ -10,7 +10,9 @@ import {
   HomeSvg,
   ScanSvg,
   HamburgerSvg,
-} from '../common/StyledComponents';
+} from  '../../common/StyledComponents';
+
+import EmptyMenu from '../components/EmptyMenu'
 // import Svg, {SvgXml} from 'react-native-svg';
 
 const HomePage = () => {
@@ -60,6 +62,7 @@ const HomePage = () => {
       <StyledScrollView
         style={{backgroundColor: '#E4E4E4'}}
         className="px-5  w-full h-[68.5%]">
+
         {/* components */}
         <StyledView>
           <StyledText
@@ -70,7 +73,7 @@ const HomePage = () => {
           <StyledView className="flex flex-row mt-[20px]">
             <StyledImage
               style={{borderBottomLeftRadius: 10, borderTopLeftRadius: 10}}
-              source={require('../assets/images/salad.png')}
+              source={require('../../assets/images/salad.png')}
             />
             <StyledView
               style={{
@@ -87,7 +90,7 @@ const HomePage = () => {
                 </StyledText>
                 <StyledImage
                   className="mr-[20px]"
-                  source={require('../assets/images/newImage.png')}
+                  source={require('../../assets/images/newImage.png')}
                 />
               </StyledView>
               <StyledText
@@ -110,39 +113,45 @@ const HomePage = () => {
             </StyledView>
           </StyledView>
         </StyledView>
-      
+
+
+        {/* emptymenu */}
+        {/* <EmptyMenu/> */}
+
       </StyledScrollView>
 
-      {/* vieworder */}        
-      <StyledView style={{backgroundColor:'#E4E4E4'}} className="pl-[20px] pr-[20px]">
+      {/* vieworder */}
+      <StyledView
+        style={{backgroundColor: '#E4E4E4'}}
+        className="pl-[20px] pr-[20px]">
         <StyledView
-            style={{
-              borderColor: '#FF8C03',
-              borderWidth: 1,
-              borderStyle: 'dotted',
-              borderRadius: 10,
-              padding: 15,
-              marginBottom: 10,
-              backgroundColor: '#fff',
-            }}
-            className="flex flex-row justify-between ">
-            <StyledView className="flex flex-row">
-              <StyledText
-                style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
-                className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
-                2x
-              </StyledText>
-              <StyledText
-                style={{color: '#FF8C03', fontWeight: 500}}
-                className="p-[5px]">
-                View order
-              </StyledText>
-            </StyledView>
+          style={{
+            borderColor: '#FF8C03',
+            borderWidth: 1,
+            borderStyle: 'dotted',
+            borderRadius: 10,
+            padding: 15,
+            marginBottom: 10,
+            backgroundColor: '#fff',
+          }}
+          className="flex flex-row justify-between ">
+          <StyledView className="flex flex-row">
             <StyledText
-              style={{color: '#000', fontWeight: 700, fontSize: 15}}
-              className="p-[5px] font-bold">
-              $ 10.90
+              style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
+              className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
+              2x
             </StyledText>
+            <StyledText
+              style={{color: '#FF8C03', fontWeight: 500}}
+              className="p-[5px]">
+              View order
+            </StyledText>
+          </StyledView>
+          <StyledText
+            style={{color: '#000', fontWeight: 700, fontSize: 15}}
+            className="p-[5px] font-bold">
+            $ 10.90
+          </StyledText>
         </StyledView>
       </StyledView>
 
