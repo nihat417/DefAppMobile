@@ -59,7 +59,7 @@ const HomePage = () => {
       {/* main */}
       <StyledScrollView
         style={{backgroundColor: '#E4E4E4'}}
-        className="px-5  w-full h-[78.8%]">
+        className="px-5  w-full h-[68.5%]">
         {/* components */}
         <StyledView>
           <StyledText
@@ -110,25 +110,75 @@ const HomePage = () => {
             </StyledView>
           </StyledView>
         </StyledView>
+      
       </StyledScrollView>
 
-      {/* navmenu */}
+      {/* vieworder */}        
+      <StyledView style={{backgroundColor:'#E4E4E4'}} className="pl-[20px] pr-[20px]">
+        <StyledView
+            style={{
+              borderColor: '#FF8C03',
+              borderWidth: 1,
+              borderStyle: 'dotted',
+              borderRadius: 10,
+              padding: 15,
+              marginBottom: 10,
+              backgroundColor: '#fff',
+            }}
+            className="flex flex-row justify-between ">
+            <StyledView className="flex flex-row">
+              <StyledText
+                style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
+                className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
+                2x
+              </StyledText>
+              <StyledText
+                style={{color: '#FF8C03', fontWeight: 500}}
+                className="p-[5px]">
+                View order
+              </StyledText>
+            </StyledView>
+            <StyledText
+              style={{color: '#000', fontWeight: 700, fontSize: 15}}
+              className="p-[5px] font-bold">
+              $ 10.90
+            </StyledText>
+        </StyledView>
+      </StyledView>
 
-      <StyledView style={{backgroundColor:"fff"}} className="flex flex-row justify-between">
-        <StyledView className='mt-[15px] ml-[40px]'>
+      {/* navmenu */}
+      <StyledView
+        style={{backgroundColor: 'fff'}}
+        className="flex flex-row justify-between">
+        <StyledView className="mt-[15px] ml-[40px]">
           <HomeSvg className="ml-[8px]" width={20} height={30} stroke="black" />
           <StyledText>Home</StyledText>
         </StyledView>
-        <StyledView className='mt-[15px] ml-[20px]'>
-          <SubscriptionSvg className="ml-[24px]" width={30} height={30} stroke="black" />
+        <StyledView className="mt-[15px] ml-[20px]">
+          <SubscriptionSvg
+            className="ml-[24px]"
+            width={30}
+            height={30}
+            stroke="black"
+          />
           <StyledText>Subscription</StyledText>
         </StyledView>
-        <StyledView className='mt-[15px] ml-[30px]'>
-          <ScanSvg className=" ml-[2.5px]" width={30} height={30} stroke="black" />
+        <StyledView className="mt-[15px] ml-[30px]">
+          <ScanSvg
+            className=" ml-[2.5px]"
+            width={30}
+            height={30}
+            stroke="black"
+          />
           <StyledText>Scan</StyledText>
         </StyledView>
-        <StyledView className='mt-[15px] ml-[30px] mr-[30px]'>
-          <HamburgerSvg className="ml-[4.5px]" width={30} height={30} stroke="black" />
+        <StyledView className="mt-[15px] ml-[30px] mr-[30px]">
+          <HamburgerSvg
+            className="ml-[4.5px]"
+            width={30}
+            height={30}
+            stroke="black"
+          />
           <StyledText>Menu</StyledText>
         </StyledView>
       </StyledView>
