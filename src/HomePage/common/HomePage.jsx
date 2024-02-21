@@ -10,9 +10,9 @@ import {
   HomeSvg,
   ScanSvg,
   HamburgerSvg,
-} from  '../../common/StyledComponents';
+} from '../../common/StyledComponents';
 
-import EmptyMenu from '../components/EmptyMenu'
+import EmptyMenu from '../components/EmptyMenu';
 // import Svg, {SvgXml} from 'react-native-svg';
 
 const HomePage = () => {
@@ -23,7 +23,13 @@ const HomePage = () => {
         style={{backgroundColor: '#fff'}}
         className="flex flex-row justify-between mt-[30px] ml-[20px] mr-[10px]">
         <Leftarrow width={50} height={50} stroke="black" />
-        <StyledText style={{fontSize: 20, fontWeight: 500, color: '#414141'}}>
+        <StyledText
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 20,
+            fontWeight: 'bold',
+            color: '#414141',
+          }}>
           12 January 2023
         </StyledText>
         <SearchSvg width={50} height={50} stroke="green" />
@@ -32,27 +38,52 @@ const HomePage = () => {
       {/* nav */}
       <StyledView className="flex flex-row h-[30px]">
         <StyledText
-          style={{fontSize: 15, fontWeight: 500, color: '#B7B7B7'}}
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 15,
+            fontWeight: 'bold',
+            color: '#B7B7B7',
+          }}
           className="mt-[5px] ml-[20px] mr-[20px]">
           All
         </StyledText>
         <StyledText
-          style={{fontSize: 15, fontWeight: 500, color: '#B7B7B7'}}
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 15,
+            fontWeight: 'bold',
+            color: '#B7B7B7',
+          }}
           className="mt-[5px] ml-[20px] mr-[20px]">
           Desserts
         </StyledText>
         <StyledText
-          style={{fontSize: 15, fontWeight: 500, color: '#B7B7B7'}}
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 15,
+            fontWeight: 'bold',
+            color: '#B7B7B7',
+          }}
           className="mt-[5px] ml-[20px] mr-[20px]">
           Salads
         </StyledText>
         <StyledText
-          style={{fontSize: 15, fontWeight: 500, color: '#B7B7B7'}}
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 15,
+            fontWeight: 'bold',
+            color: '#B7B7B7',
+          }}
           className="mt-[5px] ml-[20px] mr-[20px]">
           Burgers
         </StyledText>
         <StyledText
-          style={{fontSize: 15, fontWeight: 500, color: '#B7B7B7'}}
+          style={{
+            fontFamily: 'Poppins-Light',
+            fontSize: 15,
+            fontWeight: 'bold',
+            color: '#B7B7B7',
+          }}
           className="mt-[5px] ml-[10px] mr-[10px]">
           Chicken
         </StyledText>
@@ -62,11 +93,14 @@ const HomePage = () => {
       <StyledScrollView
         style={{backgroundColor: '#E4E4E4'}}
         className="px-5  w-full h-[68.5%]">
-
         {/* components */}
         <StyledView>
           <StyledText
-            style={{fontSize: 20, fontWeight: 500}}
+            style={{
+              fontFamily: 'Poppins-Light',
+              fontSize: 20,
+              fontWeight: 'bold',
+            }}
             className="mt-[20px]">
             Salads
           </StyledText>
@@ -84,7 +118,7 @@ const HomePage = () => {
               className="flex flex-col w-[240px]">
               <StyledView className="flex flex-row justify-between mt-[10px] ">
                 <StyledText
-                  style={{fontSize: 15, fontWeight: 600, color: '#184639'}}
+                  style={{fontFamily:'Poppins-Light',fontSize: 15, fontWeight: 'bold', color: '#184639'}}
                   className="ml-[20px] font-bold">
                   Vegeterian bowl
                 </StyledText>
@@ -94,18 +128,18 @@ const HomePage = () => {
                 />
               </StyledView>
               <StyledText
-                style={{fontWeight: 400}}
+                style={{fontFamily:'Poppins-Light',fontSize:13,fontWeight:'normal'}}
                 className="mt-[20px] mb-[20px] ml-[20px]">
                 Lorem ipsum dolor sit amet, consectetur adipisci
               </StyledText>
               <StyledView className="flex flex-row justify-between">
                 <StyledText
-                  style={{color: '#FF8C03', fontWeight: 700}}
+                  style={{fontFamily:'Poppins-Light',color: '#FF8C03', fontWeight: 700}}
                   className="ml-[20px]">
                   4 items left
                 </StyledText>
                 <StyledText
-                  style={{color: '#42C2E5', fontWeight: 700}}
+                  style={{fontFamily:'Poppins-Light',color: '#42C2E5', fontWeight: 700}}
                   className="mr-[20px]">
                   12 AZN
                 </StyledText>
@@ -114,10 +148,9 @@ const HomePage = () => {
           </StyledView>
         </StyledView>
 
-
         {/* emptymenu */}
         {/* <EmptyMenu/> */}
-
+        
       </StyledScrollView>
 
       {/* vieworder */}
@@ -161,7 +194,7 @@ const HomePage = () => {
         className="flex flex-row justify-between">
         <StyledView className="mt-[15px] ml-[40px]">
           <HomeSvg className="ml-[8px]" width={20} height={30} stroke="black" />
-          <StyledText>Home</StyledText>
+          <StyledText style={{color:'#757575',fontFamily:'Poppins-Light',fontWeight:500}}>Home</StyledText>
         </StyledView>
         <StyledView className="mt-[15px] ml-[20px]">
           <SubscriptionSvg
@@ -170,7 +203,7 @@ const HomePage = () => {
             height={30}
             stroke="black"
           />
-          <StyledText>Subscription</StyledText>
+          <StyledText style={{color:'#757575',fontFamily:'Poppins-Light',fontWeight:500}}>Subscription</StyledText>
         </StyledView>
         <StyledView className="mt-[15px] ml-[30px]">
           <ScanSvg
@@ -179,7 +212,7 @@ const HomePage = () => {
             height={30}
             stroke="black"
           />
-          <StyledText>Scan</StyledText>
+          <StyledText style={{color:'#757575',fontFamily:'Poppins-Light',fontWeight:500}}>Scan</StyledText>
         </StyledView>
         <StyledView className="mt-[15px] ml-[30px] mr-[30px]">
           <HamburgerSvg
@@ -188,7 +221,7 @@ const HomePage = () => {
             height={30}
             stroke="black"
           />
-          <StyledText>Menu</StyledText>
+          <StyledText style={{color:'#757575',fontFamily:'Poppins-Light',fontWeight:500}}>Menu</StyledText>
         </StyledView>
       </StyledView>
     </StyledView>
