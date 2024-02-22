@@ -60,7 +60,7 @@ const AddReview = () => {
       <StyledButton
         style={{backgroundColor: '#FF8C03',alignItems: 'center',}}
         className="ml-[100px] mr-[100px] mt-[10px] mb-[20px] p-[10px] rounded-[20px]">
-        <StyledText>Send</StyledText>
+        <StyledText style={{color:"#FFF"}}>Send</StyledText>
       </StyledButton>
     </StyledView>
   );

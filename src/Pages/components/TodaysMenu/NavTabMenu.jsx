@@ -10,7 +10,8 @@ import {
 
 const NavTabMenu = () => {
   return (
-    <StyledView>
+    <StyledView style={{borderColor:"#ECF3F9",
+    elevation: 1}}>
       {/* navmenu */}
       <StyledView
         style={{backgroundColor: 'fff'}}
