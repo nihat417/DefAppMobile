@@ -9,6 +9,7 @@ import {
 
 import HomeHeader from '../components/HomePage/HomeHeader';
 import HomeSlider from '../components/HomePage/HomeSlider';
+import AddReview from '../components/HomePage/AddReview';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,11 @@ const HomePage = () => {
       {/* Main */}
       <StyledScrollView style={{backgroundColor: '#F8F8F8'}} className="h-[68.5%]">
         <HomeSlider/>
+
+        <AddReview/>
       </StyledScrollView>
+
+      
     </StyledScrollView>
   );
 };
