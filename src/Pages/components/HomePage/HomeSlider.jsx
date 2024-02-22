@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  StyledView,
-  StyledText,
-  LocationSvg,
-} from '../../../common/StyledComponents';
 import {SliderBox} from 'react-native-image-slider-box';
+import {StyledView} from '../../../common/StyledComponents';
 
 const HomeSlider = () => {
   const Images = [
@@ -12,6 +8,14 @@ const HomeSlider = () => {
     require('../../../assets/images/deliciousimage2.jpg'),
     require('../../../assets/images/deliciouseimage3.jpg'),
   ];
+  const sliderStyle = {
+    width: 390,
+    height: 188,
+    borderRadius: 15,
+    marginHorizontal: 10,
+    marginVertical: 15,
+  };
+
   return (
     <StyledView>
       <SliderBox
@@ -20,14 +24,14 @@ const HomeSlider = () => {
         inactiveDotColor="#717171"
         paginationBoxVerticalPadding={20}
         autoplay
-        autoplayInterval={5000}
+        autoplayInterval={9000}
         circleLoop
         resizeMethod={'resize'}
         resizeMode={'cover'}
+        style={sliderStyle}
       />
     </StyledView>
   );
 };
-
 
 export default HomeSlider;
