@@ -85,21 +85,30 @@ const HomePage = () => {
             fontWeight: 500,
             color: '#414141',
             marginLeft: 20,
-            marginBottom: 20,}}>
+            marginBottom: 20,
+          }}>
           Weekly menu{' '}
         </StyledText>
 
         {/* Weeklymenu */}
-        <StyledScrollView horizontal={true} style={{marginLeft:20,marginRight:20,backgroundColor:"#fff",elevation:3,marginBottom:20,borderRadius:10}}>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
-          <WeeklyMenu/>
+        <StyledScrollView
+          horizontal={true}
+          style={{
+            marginLeft: 20,
+            marginRight: 20,
+            backgroundColor: '#fff',
+            elevation: 3,
+            marginBottom: 20,
+            borderRadius: 10,
+          }}>
+          <WeeklyMenu weekday={'Mon'} day={'12'} today={true}/>
+          <WeeklyMenu weekday={'Tue'} day={'13'} today={false}/>
+          <WeeklyMenu weekday={'Wed'} day={'14'} today={false}/>
+          <WeeklyMenu weekday={'Thu'} day={'15'} today={false}/>
+          <WeeklyMenu weekday={'Fri'} day={'16'} today={false}/>
+          <WeeklyMenu weekday={'Sat'} day={'17'} today={false}/>
+          <WeeklyMenu weekday={'Sun'} day={'18'} today={false}/>
         </StyledScrollView>
-
       </StyledScrollView>
 
       <NavTabMenu />
