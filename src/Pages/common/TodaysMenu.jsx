@@ -26,7 +26,7 @@ const TodaysMenu = () => {
         style={{backgroundColor: '#F8F8F8'}}
         className="px-5  w-full h-[68.5%]">
         {/* components */}
-        <StyledView>
+        {/* <StyledView>
           <StyledText
             style={{
               fontFamily: 'Poppins-Light',
@@ -95,10 +95,10 @@ const TodaysMenu = () => {
               </StyledView>
             </StyledView>
           </StyledView>
-        </StyledView>
+        </StyledView> */}
 
         {/* emptymenu */}
-        {/* <EmptyMenu/> */}
+        <EmptyMenu/>
         
       </StyledScrollView>
 

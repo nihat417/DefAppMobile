@@ -13,7 +13,7 @@ const Details = () => {
   return (
     <StyledView style={{flex: 1,backgroundColor:"#FAFAFA"}}>
       {/* Details Header */}
-      <DetailsHeader complated={true}/>
+      <DetailsHeader complated={false}/>
 
       {/* abot details */}
       <StyledView className='flex flex-row justify-around mt-[50px]' style={{ marginBottom: 100 }}>
