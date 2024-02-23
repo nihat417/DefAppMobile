@@ -14,6 +14,7 @@ import NavTabMenu from '../components/TodaysMenu/NavTabMenu';
 import Category from '../components/HomePage/Category';
 import FoodSets from '../components/HomePage/FoodSets';
 import TopSales from '../components/HomePage/TopSales';
+import WeeklyMenu from '../components/HomePage/WeeklyMenu';
 
 const HomePage = () => {
   return (
@@ -27,7 +28,9 @@ const HomePage = () => {
         className="h-[79.9%]">
         {/* slider and review */}
         <HomeSlider />
-        {/* <AddReview /> */}
+
+        {/* Review */}
+        <AddReview />
 
         {/* categoires */}
         <Category />
@@ -69,10 +72,34 @@ const HomePage = () => {
         </StyledView>
 
         {/* Top Seles */}
-        <StyledScrollView horizontal={true} className="flex flex-row">
-            <TopSales/>
-
+        <StyledScrollView horizontal={true} className="flex flex-row mb-[20px]">
+          <TopSales />
+          <TopSales />
         </StyledScrollView>
+
+        {/* Weeklymenu Text */}
+
+        <StyledText
+          style={{
+            fontSize: 20,
+            fontWeight: 500,
+            color: '#414141',
+            marginLeft: 20,
+            marginBottom: 20,}}>
+          Weekly menu{' '}
+        </StyledText>
+
+        {/* Weeklymenu */}
+        <StyledScrollView horizontal={true} style={{marginLeft:20,marginRight:20,backgroundColor:"#fff",elevation:3,marginBottom:20,borderRadius:10}}>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+          <WeeklyMenu/>
+        </StyledScrollView>
+
       </StyledScrollView>
 
       <NavTabMenu />
