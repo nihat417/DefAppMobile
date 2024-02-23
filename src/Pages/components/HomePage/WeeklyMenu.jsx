@@ -2,9 +2,6 @@ import React from 'react';
 import {
   StyledView,
   StyledText,
-  StyledScrollView,
-  StyledImage,
-  StyledButton,
 } from '../../../common/StyledComponents';
 
 const WeeklyMenu = ({weekday,day,today}) => {
