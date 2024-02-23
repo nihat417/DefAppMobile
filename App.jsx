@@ -7,8 +7,8 @@ const App = () => {
   return (
   // <SafeAreaView>
   // </SafeAreaView>
-    // <TodaysMenu />
-    <HomePage/>
+    <TodaysMenu />
+    // <HomePage/>
   )
 };
 

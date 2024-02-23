@@ -104,7 +104,7 @@ const TodaysMenu = () => {
 
       {/* vieworder */}
       <StyledView
-        style={{backgroundColor: '#E4E4E4'}}
+        style={{backgroundColor: '#F8F8F8'}}
         className="pl-[20px] pr-[20px]">
         <StyledView
           style={{
