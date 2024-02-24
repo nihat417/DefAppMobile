@@ -5,102 +5,54 @@ import {
   StyledText,
   StyledImage,
 } from '../../common/StyledComponents';
+import { FlatList } from 'react-native';
+
 
 import EmptyMenu from '../components/TodaysMenu/EmptyMenu';
 import NavTabmenu from '../components/TodaysMenu/NavTabMenu';
 import TodaysMenuHeader from '../components/TodaysMenu/TodaysMenuHeader';
 import ScrolledNav from '../components/TodaysMenu/ScrolledNav';
+import TodaysMenuItems from '../components/TodaysMenu/TodaysMenuItems';
 // import Svg, {SvgXml} from 'react-native-svg';
 
 const TodaysMenu = () => {
+
+  // static data
+  const data = [
+    { 
+      headerMenu: "Salads",
+      items: [
+        {
+          id: '1',
+          image: require('../../assets/images/salad.png'),
+          name: 'Vegeterian bowl',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          itemsLeft: '4 ',
+          price: '12',
+        },
+      ]
+    },
+  ];
+
   return (
     <StyledView>
       {/* header */}
-      <TodaysMenuHeader/>
+      <TodaysMenuHeader />
 
       {/* scrollednav */}
-      <ScrolledNav/>
+      <ScrolledNav />
 
       {/* main */}
-      <StyledScrollView
+      <StyledView
         style={{backgroundColor: '#F8F8F8'}}
         className="px-5  w-full h-[68.5%]">
         {/* components */}
-        {/* <StyledView>
-          <StyledText
-            style={{
-              fontFamily: 'Poppins-Light',
-              fontSize: 20,
-              fontWeight: 'bold',
-            }}
-            className="mt-[20px]">
-            Salads
-          </StyledText>
-          <StyledView className="flex flex-row mt-[20px]">
-            <StyledImage
-              style={{borderBottomLeftRadius: 10, borderTopLeftRadius: 10}}
-              source={require('../../assets/images/salad.png')}
-            />
-            <StyledView
-              style={{
-                backgroundColor: '#fff',
-                borderTopRightRadius: 10,
-                borderBottomRightRadius: 10,
-              }}
-              className="flex flex-col w-[240px]">
-              <StyledView className="flex flex-row justify-between mt-[10px] ">
-                <StyledText
-                  style={{
-                    fontFamily: 'Poppins-Light',
-                    fontSize: 15,
-                    fontWeight: 'bold',
-                    color: '#184639',
-                  }}
-                  className="ml-[20px] font-bold">
-                  Vegeterian bowl
-                </StyledText>
-                <StyledImage
-                  className="mr-[20px]"
-                  source={require('../../assets/images/newImage.png')}
-                />
-              </StyledView>
-              <StyledText
-                style={{
-                  fontFamily: 'Poppins-Light',
-                  fontSize: 13,
-                  fontWeight: 'normal',
-                }}
-                className="mt-[20px] mb-[20px] ml-[20px]">
-                Lorem ipsum dolor sit amet, consectetur adipisci
-              </StyledText>
-              <StyledView className="flex flex-row justify-between">
-                <StyledText
-                  style={{
-                    fontFamily: 'Poppins-Light',
-                    color: '#FF8C03',
-                    fontWeight: 700,
-                  }}
-                  className="ml-[20px]">
-                  4 items left
-                </StyledText>
-                <StyledText
-                  style={{
-                    fontFamily: 'Poppins-Light',
-                    color: '#42C2E5',
-                    fontWeight: 700,
-                  }}
-                  className="mr-[20px]">
-                  12 AZN
-                </StyledText>
-              </StyledView>
-            </StyledView>
-          </StyledView>
-        </StyledView> */}
+        <FlatList data={data} renderItem={({item})=><TodaysMenuItems menuItems={item}/>} keyExtractor={item=>item.id}/>
+        
 
         {/* emptymenu */}
-        <EmptyMenu/>
-        
-      </StyledScrollView>
+        {/* <EmptyMenu/> */}
+      </StyledView>
 
       {/* vieworder */}
       <StyledView
