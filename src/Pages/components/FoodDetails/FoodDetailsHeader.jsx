@@ -4,6 +4,7 @@ import {
   StyledText,
   BackFoodDetailsSvg,
   StyledImage,
+  BigEllipsSvg,
 } from '../../../common/StyledComponents';
 import {ImageBackground} from 'react-native';
 
@@ -23,8 +24,32 @@ const FoodDetailsHeader = () => {
         
       </StyledView>
 
-      <StyledView style={{backgroundColor:"#fff",width:280,height:320,marginTop:50,alignItems:'center',borderRadius:150,alignSelf:"center"}}>
+      <StyledView style={{alignSelf:'flex-start',marginBottom:-50,marginLeft:20}}>
+        <StyledView className="ml-[20px]">
+          <BigEllipsSvg  size="big" className="ml-[20px]"/>  
+        </StyledView> 
+        <StyledView >
+          <BigEllipsSvg size="middle"/>
+        </StyledView>
+        <StyledView style={{alignSelf:'flex-end',marginRight:20}}>
+          <BigEllipsSvg/>
+        </StyledView>
+      </StyledView>
+
+      <StyledView style={{backgroundColor:"#fff",width:280,height:320,alignItems:'center',borderRadius:150,alignSelf:"center"}}>
         <StyledImage style={{width:250,height:250,backgroundColor:"#fff",marginTop:10,borderRadius:150}} source={require("../../../assets/images/deliciousimgae1.jpg")}/>
+      </StyledView>
+
+      <StyledView style={{alignSelf:'flex-end',marginTop:-200}}>
+        <StyledView className='ml-[10px]'>
+          <BigEllipsSvg size="middle"/>
+        </StyledView>
+        <StyledView style={{alignSelf:'flex-end',marginRight:15}}>
+          <BigEllipsSvg/>
+        </StyledView>
+        <StyledView className="mr-[20px]">
+          <BigEllipsSvg  size="big" className="ml-[20px]"/>  
+        </StyledView> 
       </StyledView>
 
     </ImageBackground>

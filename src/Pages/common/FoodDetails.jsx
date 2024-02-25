@@ -15,7 +15,7 @@ const FoodDetails = () => {
     <StyledView>
       <StyledScrollView className="h-[91.5%]">
         <FoodDetailsHeader />
-        <StyledView className="ml-[20px] mr-[20px] mt-[250px]">
+        <StyledView className="ml-[20px] mr-[20px] mt-[300px]">
           {/* Sezar salad texts */}
           <StyledView className="flex flex-row justify-between">
             <StyledText
