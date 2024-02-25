@@ -14,7 +14,8 @@ import Backsvg from '../assets/svg/BackSvg'
 import SuccesfullSvg from '../assets/svg/SuccesfullSvg';
 import InvoiceSvg from '../assets/svg/InvoiceSvg';
 import ErrorDetSvg from '../assets/svg/ErrorDetSvg';
-import BackFoodDetailsSvg from '../assets/svg/BackFoodDetailsSvg'
+import BackFoodDetailsSvg from '../assets/svg/BackFoodDetailsSvg';
+import CreditCardSvg from '../assets/svg/CreditCardSvg';
 
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
@@ -24,5 +25,5 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 export {Leftarrow,SearchSvg,SubscriptionSvg,HomeSvg,
   ScanSvg,HamburgerSvg,EmptyMenuSvg,LocationSvg,CloseSvg,
-  Backsvg,SuccesfullSvg,InvoiceSvg,ErrorDetSvg,BackFoodDetailsSvg
+  Backsvg,SuccesfullSvg,InvoiceSvg,ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg
 };
