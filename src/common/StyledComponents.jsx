@@ -17,6 +17,7 @@ import ErrorDetSvg from '../assets/svg/ErrorDetSvg';
 import BackFoodDetailsSvg from '../assets/svg/BackFoodDetailsSvg';
 import CreditCardSvg from '../assets/svg/CreditCardSvg';
 import BigEllipsSvg from '../assets/svg/BigEllipsSvg';
+import EditProfileSvg from '../assets/svg/EditProfileSvg'
 
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
@@ -24,7 +25,7 @@ export const StyledInput = styled(TextInput);
 export const StyledButton = styled(TouchableOpacity);
 export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
-export {Leftarrow,SearchSvg,SubscriptionSvg,HomeSvg,
+export {Leftarrow,SearchSvg,SubscriptionSvg,HomeSvg,EditProfileSvg,
   ScanSvg,HamburgerSvg,EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,
   Backsvg,SuccesfullSvg,InvoiceSvg,ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg
 };
