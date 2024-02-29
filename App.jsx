@@ -9,6 +9,7 @@ import BarcodeScan from './src/Pages/common/BarcodeScan';
 import Barcode from './src/Pages/common/Barcode';
 import Profile from './src/Pages/common/Profile';
 import ProfileEdit from './src/Pages/common/ProfileEdit';
+import SettingsPage from './src/Pages/common/SettingsPage';
 
 const App = () => {
   return (
@@ -20,8 +21,9 @@ const App = () => {
     // <CheckOut/>
     // <BarcodeScan/>
     // <Barcode/>
-    // <Profile/>
-    <ProfileEdit/>
+    <Profile/>
+    // <ProfileEdit/>
+    // <SettingsPage />
     // <HomePage />
   );
 };

@@ -17,7 +17,20 @@ import ErrorDetSvg from '../assets/svg/ErrorDetSvg';
 import BackFoodDetailsSvg from '../assets/svg/BackFoodDetailsSvg';
 import CreditCardSvg from '../assets/svg/CreditCardSvg';
 import BigEllipsSvg from '../assets/svg/BigEllipsSvg';
-import EditProfileSvg from '../assets/svg/EditProfileSvg'
+import EditProfileSvg from '../assets/svg/EditProfileSvg';
+import PersonalInfoSvg from '../assets/svg/PersonalInfoSvg'
+import RightArrowSvg from '../assets/svg/RightArrowSvg'
+import AddIconSvg from '../assets/svg/AddIconsSvg';
+import InvoicesSvg from '../assets/svg/InvoicesSvg';
+import PaymentsSvg from '../assets/svg/PaymentsSvg';
+import TermsAndConditionsSvg from '../assets/svg/TermsAndConditionsSvg';
+import HelpSvg from '../assets/svg/HelpSvg';
+import SettingsSvg from '../assets/svg/SettingsSvg';
+import DeleteAcSvg from '../assets/svg/DeleteAcSvg';
+import LogOutSvg from '../assets/svg/LogOutSvg';
+import ResetPaswSvg from '../assets/svg/ResetPaswSvg';
+import DeleteModalSvg from '../assets/svg/DeleteModalSvg';
+import LogOutModalSvg from '../assets/svg/LogOutModalSvg';
 
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
@@ -25,7 +38,7 @@ export const StyledInput = styled(TextInput);
 export const StyledButton = styled(TouchableOpacity);
 export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
-export {Leftarrow,SearchSvg,SubscriptionSvg,HomeSvg,EditProfileSvg,
-  ScanSvg,HamburgerSvg,EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,
-  Backsvg,SuccesfullSvg,InvoiceSvg,ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg
+export {Leftarrow,LogOutSvg,DeleteModalSvg,SearchSvg,SubscriptionSvg,LogOutModalSvg,HomeSvg,EditProfileSvg,PersonalInfoSvg,TermsAndConditionsSvg,HelpSvg,SettingsSvg,DeleteAcSvg,
+  ScanSvg,HamburgerSvg,EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,RightArrowSvg,ResetPaswSvg,
+  Backsvg,SuccesfullSvg,InvoiceSvg,InvoicesSvg,PaymentsSvg,ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg,AddIconSvg
 };
