@@ -5,6 +5,7 @@ import TodaysMenu from './src/Pages/common/TodaysMenu';
 import Details from './src/Pages/common/Details';
 import FoodDetails from './src/Pages/common/FoodDetails';
 import CheckOut from './src/Pages/common/CheckOut';
+import BarcodeScan from './src/Pages/common/BarcodeScan';
 
 const App = () => {
   return (
@@ -12,8 +13,9 @@ const App = () => {
     // </SafeAreaView>
     // <TodaysMenu />
     // <Details/>
-    <FoodDetails/>
+    // <FoodDetails/>
     // <CheckOut/>
+    <BarcodeScan/>
     // <HomePage />
   );
 };
