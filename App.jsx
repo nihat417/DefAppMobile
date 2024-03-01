@@ -10,6 +10,9 @@ import Barcode from './src/Pages/common/Barcode';
 import Profile from './src/Pages/common/Profile';
 import ProfileEdit from './src/Pages/common/ProfileEdit';
 import SettingsPage from './src/Pages/common/SettingsPage';
+import ResetPassword from './src/Pages/common/ResetPassword';
+import AddNotifications from './src/Pages/common/AddNotifications';
+import Payment from './src/Pages/common/Payment';
 
 const App = () => {
   return (
@@ -21,8 +24,11 @@ const App = () => {
     // <CheckOut/>
     // <BarcodeScan/>
     // <Barcode/>
-    <Profile/>
+    // <Profile/>
     // <ProfileEdit/>
+    // <ResetPassword/>
+    // <AddNotifications/>
+    <Payment/>
     // <SettingsPage />
     // <HomePage />
   );
