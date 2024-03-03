@@ -111,7 +111,7 @@ const HomePage = () => {
         </StyledScrollView>
       </StyledScrollView>
 
-      <NavTabMenu />
+      {/* <NavTabMenu /> */}
     </StyledView>
   );
 };

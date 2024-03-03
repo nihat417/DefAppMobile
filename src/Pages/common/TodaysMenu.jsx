@@ -90,7 +90,7 @@ const TodaysMenu = () => {
       </StyledView>
 
       {/* navmenu */}
-      <NavTabmenu />
+      {/* <NavTabmenu /> */}
     </StyledView>
   );
 };

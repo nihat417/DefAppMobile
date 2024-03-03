@@ -136,7 +136,7 @@ const ProfileEdit = () => {
         </StyledButton>
       </StyledView>
 
-      <NavTabMenu />
+      {/* <NavTabMenu /> */}
     </StyledView>
   );
 };

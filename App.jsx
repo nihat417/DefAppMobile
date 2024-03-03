@@ -13,12 +13,13 @@ import SettingsPage from './src/Pages/common/SettingsPage';
 import ResetPassword from './src/Pages/common/ResetPassword';
 import AddNotifications from './src/Pages/common/AddNotifications';
 import Payment from './src/Pages/common/Payment';
+import NavTabMenu from './src/Pages/components/TodaysMenu/NavTabMenu';
 
-// import {NavigationContainer} from '@react-navigation/native';
-// import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-// const Stack = createNativeStackNavigator();
+const Tabs = createBottomTabNavigator();
 // const tab = createBottomTabNavigator();
 const App = () => {
   return (
@@ -34,13 +35,22 @@ const App = () => {
     // <CheckOut/>
     // <BarcodeScan/>
     // <Barcode/>
-    <Profile/>
+    // <Profile/>
     // <ProfileEdit/>
     // <ResetPassword/>
     // <AddNotifications/>
     // <Payment/>
     // <SettingsPage />
     // <HomePage />
+    <NavigationContainer>
+      <Tabs.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }} tabBar={() => null}>
+        <Tabs.Screen name="Home" component={HomePage} />
+        <Tabs.Screen name="Subscription" component={TodaysMenu} />
+        <Tabs.Screen name="Scan" component={FoodDetails} />
+        <Tabs.Screen name="Menu" component={ProfileEdit} />
+      </Tabs.Navigator>
+      <NavTabMenu/>
+  </NavigationContainer>
   );
 };
 

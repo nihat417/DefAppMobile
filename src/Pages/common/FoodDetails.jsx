@@ -208,7 +208,7 @@ const FoodDetails = () => {
 
       {/* navmenu */}
       <StyledView>
-        <NavTabMenu />
+        {/* <NavTabMenu /> */}
       </StyledView>
     </StyledView>
   );
