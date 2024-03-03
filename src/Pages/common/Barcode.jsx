@@ -9,13 +9,13 @@ import {
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import {RNCamera} from 'react-native-camera';
 import BarcodeHeader from '../components/Barcode/BarcodeHeader';
-import NavTabMenu from '../components/TodaysMenu/NavTabMenu';
+import NavTabMenu from '../components/Navigation/NavTabMenu';
 
 const Barcode = () => {
   return (
     <StyledView>
       <BarcodeHeader />
-      <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[82%]">
+      <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[90%]">
         <StyledText
           style={{
             color: '#000',
@@ -32,7 +32,6 @@ const Barcode = () => {
           flashMode={RNCamera.Constants.FlashMode.torch}
         />
       </StyledView>
-      <NavTabMenu />
     </StyledView>
   );
 };

@@ -13,13 +13,15 @@ import {
   SettingsSvg,
   DeleteAcSvg,
 } from '../../../common/StyledComponents';
+import { useNavigation } from '@react-navigation/native';
 
 const ProfileItems = () => {
+  const navigation = useNavigation();
   const DATA = [
     {
       title: 'Profile',
       data: [
-        { id: '1', title: 'Personal information', icon: <PersonalInfoSvg /> },
+        { id: '1', title: 'Personal information', icon: <PersonalInfoSvg />,screen: 'ProfileEdit' },
         { id: '2', title: 'Add locations', icon: <AddIconSvg /> },
       ],
     },
@@ -27,7 +29,7 @@ const ProfileItems = () => {
       title: 'Options',
       data: [
         { id: '3', title: 'Invoices', icon: <InvoicesSvg /> },
-        { id: '4', title: 'Payments', icon: <PaymentsSvg /> },
+        { id: '4', title: 'Payments', icon: <PaymentsSvg />,screen:'Payments' },
         { id: '5', title: 'Terms and conditions', icon: <TermsAndConditionsSvg /> },
         { id: '6', title: 'Help', icon: <HelpSvg /> },
         { id: '7', title: 'Settings', icon: <SettingsSvg /> },
@@ -36,8 +38,11 @@ const ProfileItems = () => {
     },
   ];
 
+  
+  
+
   const renderItem = ({ item }) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>navigation.navigate(item.screen)}>
       <StyledView style={{ flexDirection: 'row', marginTop: 20,marginLeft: 20, marginRight: 20, backgroundColor: "#F6F8FA", borderWidth: 1, borderRadius: 10, justifyContent: 'space-between', padding: 10, borderColor: "#EDEDED" }}>
         {item.icon}
         <StyledText style={{ color: "#292B2D", fontSize: 16, marginTop: 10, fontWeight: 500 }}>{item.title}</StyledText>

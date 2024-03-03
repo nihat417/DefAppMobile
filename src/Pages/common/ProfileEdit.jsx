@@ -11,7 +11,7 @@ import {
 import {FlatList, TextInput} from 'react-native';
 import {SelectList} from 'react-native-dropdown-select-list';
 import ProfileEditHeader from '../components/ProfileEdit/ProfileEditHeader';
-import NavTabMenu from '../components/TodaysMenu/NavTabMenu';
+import NavTabMenu from '../components/Navigation/NavTabMenu';
 
 const ProfileEdit = () => {
   const [selected, setSelected] = React.useState('');

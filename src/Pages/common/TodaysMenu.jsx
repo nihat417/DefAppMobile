@@ -5,32 +5,49 @@ import {
   StyledText,
   StyledImage,
 } from '../../common/StyledComponents';
-import { FlatList } from 'react-native';
-
+import {FlatList} from 'react-native';
 
 import EmptyMenu from '../components/TodaysMenu/EmptyMenu';
-import NavTabmenu from '../components/TodaysMenu/NavTabMenu';
+import NavTabmenu from '../components/Navigation/NavTabMenu';
 import TodaysMenuHeader from '../components/TodaysMenu/TodaysMenuHeader';
 import ScrolledNav from '../components/TodaysMenu/ScrolledNav';
 import TodaysMenuItems from '../components/TodaysMenu/TodaysMenuItems';
 // import Svg, {SvgXml} from 'react-native-svg';
 
 const TodaysMenu = () => {
-
   // static data
   const data = [
-    { 
-      headerMenu: "Salads",
+    {
+      headerMenu: 'Salads',
       items: [
         {
           id: '1',
           image: require('../../assets/images/salad.png'),
           name: 'Vegeterian bowl',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           itemsLeft: '4 ',
           price: '12',
         },
-      ]
+        {
+          id: '2',
+          image: require('../../assets/images/todayssalads2.jpg'),
+          name: 'Vegeterian bowl',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          itemsLeft: '4 ',
+          price: '12',
+        },
+        {
+          id: '3',
+          image: require('../../assets/images/todaysalads3.jpeg'),
+          name: 'Vegeterian bowl',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          itemsLeft: '4 ',
+          price: '12',
+        },
+      ],
     },
   ];
 
@@ -45,10 +62,13 @@ const TodaysMenu = () => {
       {/* main */}
       <StyledView
         style={{backgroundColor: '#F8F8F8'}}
-        className="px-5  w-full h-[68.5%]">
+        className="px-5  w-full h-[75.5%]">
         {/* components */}
-        <FlatList data={data} renderItem={({item})=><TodaysMenuItems menuItems={item}/>} keyExtractor={item=>item.id}/>
-        
+        <FlatList
+          data={data}
+          renderItem={({item}) => <TodaysMenuItems menuItems={item} />}
+          keyExtractor={item => item.id}
+        />
 
         {/* emptymenu */}
         {/* <EmptyMenu/> */}
@@ -56,7 +76,6 @@ const TodaysMenu = () => {
 
       {/* vieworder */}
       <StyledView
-        style={{backgroundColor: '#F8F8F8'}}
         className="pl-[20px] pr-[20px]">
         <StyledView
           style={{
@@ -87,10 +106,7 @@ const TodaysMenu = () => {
             $ 10.90
           </StyledText>
         </StyledView>
-      </StyledView>
-
-      {/* navmenu */}
-      {/* <NavTabmenu /> */}
+      </StyledView>      
     </StyledView>
   );
 };

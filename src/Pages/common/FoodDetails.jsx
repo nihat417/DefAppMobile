@@ -8,7 +8,7 @@ import {
   StyledButton,
 } from '../../common/StyledComponents';
 import FoodDetailsHeader from '../components/FoodDetails/FoodDetailsHeader';
-import NavTabMenu from '../components/TodaysMenu/NavTabMenu';
+import NavTabMenu from '../components/Navigation/NavTabMenu';
 
 const FoodDetails = () => {
   return (
@@ -207,9 +207,7 @@ const FoodDetails = () => {
       </StyledScrollView>
 
       {/* navmenu */}
-      <StyledView>
-        {/* <NavTabMenu /> */}
-      </StyledView>
+      <StyledView>{/* <NavTabMenu /> */}</StyledView>
     </StyledView>
   );
 };

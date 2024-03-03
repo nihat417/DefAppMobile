@@ -22,7 +22,7 @@ const TodaysMenuItems = ({menuItems}) => {
       {items.map((item) => (
         <StyledView key={item.id} className="flex flex-row mt-[20px]">
           <StyledImage
-            style={{borderBottomLeftRadius: 10, borderTopLeftRadius: 10}}
+            style={{borderBottomLeftRadius: 10, borderTopLeftRadius: 10,width:140,height:140}}
             source={item.image}
           />
           <StyledView

@@ -3,7 +3,6 @@ import {TouchableOpacity, Modal} from 'react-native';
 import {BlurView} from '@react-native-community/blur';
 import ProfileHeader from '../components/Profile/ProfileHeader';
 import ProfileItems from '../components/Profile/ProfileItems';
-import NavTabMenu from '../components/TodaysMenu/NavTabMenu';
 import ProfileModal from '../components/Profile/ProfileModal';
 import {
   StyledView,
@@ -26,7 +25,7 @@ const Profile = () => {
   return (
     <StyledView>
       <ProfileHeader />
-      <StyledScrollView style={{backgroundColor: '#FFF'}} className="h-[82%]">
+      <StyledScrollView style={{backgroundColor: '#FFF'}} className="h-[90%]">
         <ProfileItems />
 
         <TouchableOpacity
@@ -37,7 +36,7 @@ const Profile = () => {
             marginBottom: 20,
             marginLeft: 20,
             marginRight: 20,
-            marginTop:20,
+            marginTop: 20,
             borderWidth: 1,
             borderColor: '#FF8C03',
             borderRadius: 30,
@@ -45,13 +44,11 @@ const Profile = () => {
             alignItems: 'center',
           }}>
           <LogOutSvg />
-          <StyledText style={{fontSize: 16,fontWeight: 500, color: '#FF8C03'}}>
+          <StyledText style={{fontSize: 16, fontWeight: 500, color: '#FF8C03'}}>
             Log out
           </StyledText>
         </TouchableOpacity>
       </StyledScrollView>
-
-      <NavTabMenu />
 
       <Modal
         transparent={true}
