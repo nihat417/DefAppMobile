@@ -8,8 +8,11 @@ import {
   HamburgerSvg,
 } from '../../../common/StyledComponents';
 
+
+
 const NavTabMenu = () => {
   return (
+    
     <StyledView style={{borderColor:"#ECF3F9",
     elevation: 1}}>
       {/* navmenu */}

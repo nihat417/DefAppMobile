@@ -14,8 +14,18 @@ import ResetPassword from './src/Pages/common/ResetPassword';
 import AddNotifications from './src/Pages/common/AddNotifications';
 import Payment from './src/Pages/common/Payment';
 
+// import {NavigationContainer} from '@react-navigation/native';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
+// const Stack = createNativeStackNavigator();
+// const tab = createBottomTabNavigator();
 const App = () => {
   return (
+    // <NavigationContainer>
+      
+    // </NavigationContainer>
+
     // <SafeAreaView>
     // </SafeAreaView>
     // <TodaysMenu />
@@ -24,11 +34,11 @@ const App = () => {
     // <CheckOut/>
     // <BarcodeScan/>
     // <Barcode/>
-    // <Profile/>
+    <Profile/>
     // <ProfileEdit/>
     // <ResetPassword/>
     // <AddNotifications/>
-    <Payment/>
+    // <Payment/>
     // <SettingsPage />
     // <HomePage />
   );
