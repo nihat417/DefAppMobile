@@ -14,6 +14,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Details from '../../common/Details';
 import ProfileEdit from '../../common/ProfileEdit';
 import Payment from '../../common/Payment';
+import AddLocations from '../../common/AddLocations';
+import SettingsPage from '../../common/SettingsPage';
 
 
 const Tabs = createBottomTabNavigator();
@@ -37,7 +39,9 @@ const MyMenuStack = () =>{
         <MenuStack.Navigator screenOptions={{headerShown:false}}>
             <MenuStack.Screen name='MainMenu' component={Profile}/>
             <MenuStack.Screen name='ProfileEdit' component={ProfileEdit}/>
-            <MenuStack.Screen name='Payments' component={Payment}/>
+            <MenuStack.Screen name='PaymentsPage' component={Payment}/>
+            <MenuStack.Screen name='AddLocationsPage' component={AddLocations}/>
+            <MenuStack.Screen name='SettingsPage' component={SettingsPage}/>
         </MenuStack.Navigator>
     )
 }

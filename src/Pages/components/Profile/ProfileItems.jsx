@@ -22,17 +22,17 @@ const ProfileItems = () => {
       title: 'Profile',
       data: [
         { id: '1', title: 'Personal information', icon: <PersonalInfoSvg />,screen: 'ProfileEdit' },
-        { id: '2', title: 'Add locations', icon: <AddIconSvg /> },
+        { id: '2', title: 'Add locations', icon: <AddIconSvg />,screen:'AddLocationsPage' },
       ],
     },
     {
       title: 'Options',
       data: [
         { id: '3', title: 'Invoices', icon: <InvoicesSvg /> },
-        { id: '4', title: 'Payments', icon: <PaymentsSvg />,screen:'Payments' },
+        { id: '4', title: 'Payments', icon: <PaymentsSvg />,screen:'PaymentsPage' },
         { id: '5', title: 'Terms and conditions', icon: <TermsAndConditionsSvg /> },
         { id: '6', title: 'Help', icon: <HelpSvg /> },
-        { id: '7', title: 'Settings', icon: <SettingsSvg /> },
+        { id: '7', title: 'Settings', icon: <SettingsSvg /> ,screen:'SettingsPage'},
         { id: '8', title: 'Delete your account', icon: <DeleteAcSvg /> },
       ],
     },

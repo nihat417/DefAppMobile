@@ -4,8 +4,11 @@ import {
   StyledText,
   Leftarrow,
 } from '../../../common/StyledComponents';
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native';
 
 const PaymentsHeader = () => {
+  const navigation = useNavigation();
   return (
     <StyledView
       style={{
@@ -15,7 +18,9 @@ const PaymentsHeader = () => {
         borderColor: '#E4E4E4',
       }}>
       <StyledView className="flex flex-row justify-between mt-[30px] ml-[20px] mr-[10px]">
-        <Leftarrow width={50} height={50} stroke="black" />
+        <TouchableOpacity onPress={()=>navigation.goBack()}>
+          <Leftarrow width={50} height={50} stroke="black" />
+        </TouchableOpacity>
         <StyledText
           style={{
             fontFamily: 'Poppins-Light',
@@ -23,7 +28,7 @@ const PaymentsHeader = () => {
             fontWeight: 500,
             color: '#414141',
           }}>
-          Reset password
+          Payments
         </StyledText>
         <StyledView className="mr-[40px]"></StyledView>
       </StyledView>

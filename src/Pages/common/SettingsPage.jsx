@@ -6,7 +6,6 @@ import {
   StyledImage,
 } from '../../common/StyledComponents';
 import SettingsHeader from '../components/SettingsPage/SettingsHeader';
-import NavTabMenu from '../components/Navigation/NavTabMenu';
 import SettingPageItems from '../components/SettingsPage/SettingPageItems';
 
 const SettingsPage = () => {
@@ -17,7 +16,6 @@ const SettingsPage = () => {
         {/* setting components */}
         <SettingPageItems />
       </StyledView>
-      <NavTabMenu />
     </StyledView>
   );
 };

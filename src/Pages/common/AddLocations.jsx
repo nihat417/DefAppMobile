@@ -7,10 +7,9 @@ import {
   LocationSvg,
 } from '../../common/StyledComponents';
 import AddNotfHeader from '../components/AddNotification/AddNotfHeader';
-import NavTabMenu from '../components/Navigation/NavTabMenu';
 import AddNotfItems from '../components/AddNotification/AddNotfItems';
 
-const AddNotifications = () => {
+const AddLocations = () => {
   return (
     <StyledView>
       <AddNotfHeader />
@@ -19,10 +18,8 @@ const AddNotifications = () => {
         {/* addnotfItems */}
         <AddNotfItems />
       </StyledScrollView>
-
-      <NavTabMenu />
     </StyledView>
   );
 };
 
-export default AddNotifications;
+export default AddLocations;

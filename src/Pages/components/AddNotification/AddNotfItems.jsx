@@ -8,7 +8,7 @@ import {
   RightArrowSvg,
 } from '../../../common/StyledComponents';
 
-const AddNotfItems = () => {
+const AddLocations = () => {
   return (
     <StyledView
       style={{
@@ -34,4 +34,4 @@ const AddNotfItems = () => {
   );
 };
 
-export default AddNotfItems;
+export default AddLocations;

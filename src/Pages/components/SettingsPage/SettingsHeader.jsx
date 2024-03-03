@@ -4,8 +4,11 @@ import {
   StyledText,
   Leftarrow,
 } from '../../../common/StyledComponents';
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native';
 
 const SettingsHeader = () => {
+  const navigation = useNavigation();
   return (
     <StyledView
     style={{
@@ -15,7 +18,9 @@ const SettingsHeader = () => {
       borderColor: '#E4E4E4',
     }}>
     <StyledView className="flex flex-row justify-between mt-[30px] ml-[20px] mr-[10px]">
-      <Leftarrow width={50} height={50} stroke="black" />
+      <TouchableOpacity onPress={()=>navigation.goBack()}>
+        <Leftarrow width={50} height={50} stroke="black" />
+      </TouchableOpacity>
       <StyledText
         style={{
           fontFamily: 'Poppins-Light',

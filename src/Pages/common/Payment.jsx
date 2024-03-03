@@ -3,12 +3,9 @@ import {
   StyledView,
   StyledScrollView,
   StyledText,
-  StyledImage,
-  LocationSvg,
   PlusSvg,
 } from '../../common/StyledComponents';
 import PaymentsHeader from '../components/Payment/PaymentsHeader';
-import NavTabMenu from '../components/Navigation/NavTabMenu';
 import MyCards from '../components/Payment/MyCards';
 import {TouchableOpacity} from 'react-native';
 import PaymentsHistory from '../components/Payment/PaymentsHistory';
@@ -17,7 +14,7 @@ const Payment = () => {
   return (
     <StyledView>
       <PaymentsHeader />
-      <StyledScrollView style={{height: '82%', backgroundColor: '#fff'}}>
+      <StyledScrollView style={{height: '90%', backgroundColor: '#fff'}}>
         {/* mycardsSection */}
         <MyCards />
         <TouchableOpacity>
@@ -42,7 +39,6 @@ const Payment = () => {
         <PaymentsHistory />
       </StyledScrollView>
 
-      <NavTabMenu />
     </StyledView>
   );
 };

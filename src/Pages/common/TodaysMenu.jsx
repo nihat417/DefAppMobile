@@ -8,7 +8,6 @@ import {
 import {FlatList} from 'react-native';
 
 import EmptyMenu from '../components/TodaysMenu/EmptyMenu';
-import NavTabmenu from '../components/Navigation/NavTabMenu';
 import TodaysMenuHeader from '../components/TodaysMenu/TodaysMenuHeader';
 import ScrolledNav from '../components/TodaysMenu/ScrolledNav';
 import TodaysMenuItems from '../components/TodaysMenu/TodaysMenuItems';
@@ -75,7 +74,7 @@ const TodaysMenu = () => {
       </StyledView>
 
       {/* vieworder */}
-      <StyledView
+      <StyledView style={{backgroundColor:'#f8f8f8'}}
         className="pl-[20px] pr-[20px]">
         <StyledView
           style={{
