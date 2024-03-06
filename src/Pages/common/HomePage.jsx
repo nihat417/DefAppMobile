@@ -26,8 +26,7 @@ const HomePage = () => {
 
       {/* Main */}
       <StyledScrollView
-        style={{backgroundColor: '#F8F8F8'}}
-        className="h-[88%]">
+        style={{backgroundColor: '#F8F8F8',height:"88%"}}>
         {/* slider and review */}
         <HomeSlider />
 
@@ -38,16 +37,14 @@ const HomePage = () => {
         <Category />
 
         {/* TodaysMenu Header*/}
-        <StyledView className="flex flex-row justify-between mt-[20px] mb-[20px]">
+        <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginBottom:20,marginTop:20}}>
           <StyledText
-            style={{fontSize: 20, fontWeight: 500}}
-            className="ml-[20px]">
+            style={{fontSize: 20, fontWeight: 500,marginLeft:20}}>
             Today’s menu (12 Jan)
           </StyledText>
           <TouchableOpacity onPress={()=>navigation.navigate("TodaysMenu")}>
             <StyledText
-              style={{color: '#66B600', fontSize: 14, fontWeight: 400}}
-              className="mr-[20px] mt-[10px]">
+              style={{color: '#66B600', fontSize: 14, fontWeight: 400,marginRight:20,marginTop:10}}>
               See more
             </StyledText>
           </TouchableOpacity>
@@ -55,28 +52,26 @@ const HomePage = () => {
 
         {/* FoodSets */}
 
-        <StyledScrollView horizontal={true} className="flex flex-row">
+        <StyledScrollView horizontal={true} style={{flexDirection:'row'}}>
           <FoodSets />
           <FoodSets />
           <FoodSets />
         </StyledScrollView>
 
         {/* Top Seles Header*/}
-        <StyledView className="flex flex-row justify-between mt-[20px] mb-[20px]">
+        <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginBottom:20,marginTop:20}}>
           <StyledText
-            style={{fontSize: 20, fontWeight: 500}}
-            className="ml-[20px]">
+            style={{fontSize: 20, fontWeight: 500,marginLeft:20}}>
             Top sales
           </StyledText>
           <StyledText
-            style={{color: '#66B600', fontSize: 14, fontWeight: 400}}
-            className="mr-[20px] mt-[10px]">
+            style={{color: '#66B600', fontSize: 14, fontWeight: 400 ,marginRight:20,marginTop:10}}>
             See more
           </StyledText>
         </StyledView>
 
         {/* Top Seles */}
-        <StyledScrollView horizontal={true} className="flex flex-row mb-[20px]">
+        <StyledScrollView horizontal={true} style={{flexDirection:'row',marginBottom:20}}>
           <TopSales />
           <TopSales />
         </StyledScrollView>
@@ -115,7 +110,6 @@ const HomePage = () => {
         </StyledScrollView>
       </StyledScrollView>
 
-      {/* <NavTabMenu /> */}
     </StyledView>
   );
 };

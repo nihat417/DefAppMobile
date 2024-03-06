@@ -15,20 +15,19 @@ const BarcodeItems = () => {
 
   return (
     <TouchableOpacity
-      style={{ backgroundColor: "#fff", elevation: 2 }}
-      className='ml-[20px] mr-[20px] mt-[20px] mb-[10px] p-[10px] rounded-[10px]'
+      style={{ backgroundColor: "#fff", elevation: 2 ,marginLeft:20,marginRight:20,marginTop:20,marginBottom:10,padding:10,borderRadius:10}}
       onPress={handlePress}>
         {/* X btn */}
         <TouchableOpacity style={{ width:24,height:24,backgroundColor:"#fff",position: 'absolute', top: -12, right:-12,elevation:2,borderRadius:10 }}
           onPress={() => console.log('X btn clicked')}>
           <StyledText style={{ color: '#757575', fontSize: 20,alignSelf:'center' }}>x</StyledText>
         </TouchableOpacity>
-      <StyledView className='flexx flex-row'>
+      <StyledView style={{flexDirection:'row'}}>
         <StyledImage
           className='w-[84px] h-[90px] rounded-[10px] mr-[10px]'
           source={require("../../../assets/images/deliciousimage2.jpg")}/>
         <StyledView style={{ width: 280 }}>
-          <StyledView className='flex flex-row justify-between mr-[30px] mt-[5px]'>
+          <StyledView style={{flexDirection:"row",justifyContent:"space-between",marginRight:30,marginTop:5}}>
             <StyledText style={{ fontSize: 16, fontWeight: 600, color: "#184639" }}>Sezar salad</StyledText>
             <StyledText style={{ borderRadius: 8, paddingTop: 2, paddingRight: 4, paddingBottom: 2, paddingLeft: 4, borderColor: "#66B600", borderWidth: 1, color: "#66B600", fontSize: 16, fontWeight: 600, }}>1x</StyledText>
           </StyledView>

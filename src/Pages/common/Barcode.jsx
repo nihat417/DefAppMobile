@@ -15,7 +15,7 @@ const Barcode = () => {
   return (
     <StyledView>
       <BarcodeHeader />
-      <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[90%]">
+      <StyledView style={{backgroundColor: '#F8F8F8',height:'90%'}}>
         <StyledText
           style={{
             color: '#000',

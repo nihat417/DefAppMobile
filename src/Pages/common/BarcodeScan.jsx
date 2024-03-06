@@ -15,7 +15,7 @@ const BarcodeScan = () => {
     <StyledView>
         <BarcodeHeader/>
 
-        <StyledScrollView style={{backgroundColor: '#F8F8F8'}} className="h-[82%]">
+        <StyledScrollView style={{backgroundColor: '#F8F8F8',height:'82%'}}>
             {/* Components */}
             <BarcodeItems/>
             <BarcodeItems/>

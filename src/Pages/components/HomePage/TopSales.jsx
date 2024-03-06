@@ -27,20 +27,18 @@ const TopSales = () => {
         }}
         source={require('../../../assets/images/topsalesfood.jpg')}
       />
-      <StyledView className="flex flex-row justify-between mt-[10px]">
+      <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginTop:10}}>
         <StyledText
-          style={{fontSize: 16, fontWeight: 'bold'}}
-          className="ml-[10px]">
+          style={{fontSize: 16, fontWeight: 'bold',marginLeft:10}}>
           Vegeterian bowl
         </StyledText>
         <StyledImage
-          className="mr-[10px]"
+        style={{marginRight:10}}
           source={require('../../../assets/images/newImage.png')}
         />
       </StyledView>
       <StyledText
-        style={{fontSize: 16, fontWeight: 600}}
-        className="ml-[10px] w-[200px]">
+        style={{fontSize: 16, fontWeight: 600,marginLeft:10,width:200}}>
         Lorem ipsum dolor sit amet, consectetur adipisci
       </StyledText>
       <StyledText

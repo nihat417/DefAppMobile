@@ -15,8 +15,8 @@ const CheckOut = () => {
     <StyledView>
       <CheckOutHeader />
 
-      <StyledScrollView style={{backgroundColor: '#F8F8F8'}} className="h-[82%]">
-        <StyledView className="flex flex-row justify-between ml-[20px] mr-[20px] mt-[20px]">
+      <StyledScrollView style={{backgroundColor: '#F8F8F8',height:'82%'}}>
+        <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,marginTop:20}}>
           <StyledText style={{color: '#184639', fontSize: 20, fontWeight: 600}}>Order summary</StyledText>
           <StyledText style={{color: '#FF8C03',fontSize: 16,fontWeight: 500,marginTop: 5, }}>Add items</StyledText>
         </StyledView>

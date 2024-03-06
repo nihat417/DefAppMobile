@@ -9,7 +9,7 @@ import {
 
 const BarcodeAddProduct = () => {
   return (
-<StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[38%]">
+<StyledView style={{backgroundColor: '#F8F8F8',height:'38%'}}>
       
 
       {/* ADD Card */}
@@ -40,8 +40,10 @@ const BarcodeAddProduct = () => {
           backgroundColor: '#66B600',
           borderColor: '#66B600',
           borderWidth: 1,
-        }}
-        className="flex flex-row justify-center p-[15px] ml-[20px] mr-[20px] mb-[10px] rounded-[40px]">
+          flexDirection:'row',
+          justifyContent:'center',
+          padding:15,marginLeft:20,marginRight:20,marginBottom:10,borderRadius:40
+        }}>
         <StyledText style={{color: '#fff'}}>Confirm</StyledText>
       </StyledButton>
     </StyledView>

@@ -9,8 +9,9 @@ import {
 
 const CheckOutPayment = () => {
   return (
-    <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[62%]">
-      <StyledView className="flex flex-row ml-[30px] mb-[10px] mt-[20px] mr-[30px] justify-between">
+    <StyledView style={{backgroundColor: '#F8F8F8',height:'62%'}}>
+      <StyledView style={{flexDirection:'row',marginLeft:30,marginBottom:10,marginTop:20,marginRight:30,justifyContent:'space-between'}}
+      >
         <StyledText style={{color: '#184639', fontSize: 20, fontWeight: 600}}>
           Payment
         </StyledText>
@@ -47,8 +48,11 @@ const CheckOutPayment = () => {
           borderTopWidth: 0,
           borderLeftWidth: 0,
           borderRightWidth: 0,
-        }}
-        className="flex flex-row mr-[30px] ml-[30px] justify-between">
+          flexDirection:'row',
+          marginLeft:30,
+          marginRight:30,
+          justifyContent:'space-between'
+        }}>
         <StyledView>
           <StyledText
             style={{
@@ -95,7 +99,7 @@ const CheckOutPayment = () => {
         </StyledView>
       </StyledView>
 
-      <StyledView className="flex flex-row justify-between ml-[30px] mr-[30px] mt-[20px]">
+      <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginLeft:30,marginRight:30,marginTop:20}}>
         <StyledText
           style={{
             fontSize: 18,
@@ -114,8 +118,13 @@ const CheckOutPayment = () => {
           backgroundColor: '#66B600',
           borderColor: '#66B600',
           borderWidth: 1,
-        }}
-        className="flex flex-row justify-center p-[15px] ml-[20px] mr-[20px] mb-[10px] rounded-[40px]">
+          flexDirection:'row',
+          justifyContent:'center',
+          padding:15,
+          marginLeft:20,
+          marginRight:20,
+          marginBottom:10,borderRadius:40
+        }}>
         <StyledText style={{color: '#fff'}}>Confirm</StyledText>
       </StyledButton>
     </StyledView>

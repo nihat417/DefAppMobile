@@ -8,7 +8,7 @@ import {
 
 const Category = () => {
   return (
-    <StyledView className='mb-[20px]'>
+    <StyledView style={{marginBottom:20}}>
     <StyledText
       style={{
         fontSize: 20,
@@ -21,24 +21,24 @@ const Category = () => {
       Categories
     </StyledText>
 
-    <StyledScrollView horizontal={true} className='flex flex-row'>
-      <StyledView className='ml-[25px] mr-[25px]'>
+    <StyledScrollView horizontal={true} style={{flexDirection:'row'}}>
+      <StyledView style={{marginLeft:25,marginRight:25}} >
           <StyledImage source={require("../../../assets/images/drinks.png")}/>
           <StyledText>Drinks</StyledText>
       </StyledView>
-      <StyledView className='ml-[25px] mr-[25px]'>
+      <StyledView style={{marginLeft:25,marginRight:25}}>
           <StyledImage source={require("../../../assets/images/pizza.png")}/>
           <StyledText>Pizza</StyledText>
       </StyledView>
-      <StyledView className='ml-[25px] mr-[25px]'>
+      <StyledView style={{marginLeft:25,marginRight:25}}>
           <StyledImage source={require("../../../assets/images/Deserts.png")}/>
           <StyledText>Deserts</StyledText>
       </StyledView>
-      <StyledView className='ml-[25px] mr-[25px]'>
+      <StyledView style={{marginLeft:25,marginRight:25}}>
           <StyledImage source={require("../../../assets/images/vegetables.png")}/>
           <StyledText>vegetables</StyledText>
       </StyledView>
-      <StyledView className='ml-[10px] mr-[25px]'>
+      <StyledView style={{marginLeft:25,marginRight:25}}>
           <StyledImage source={require("../../../assets/images/drinks.png")}/>
           <StyledText>Drinks</StyledText>
       </StyledView>

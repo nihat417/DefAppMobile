@@ -17,7 +17,7 @@ const AddNotfHeader = () => {
       borderTopWidth: 0,
       borderColor: '#E4E4E4',
     }}>
-    <StyledView className="flex flex-row justify-between mt-[30px] ml-[20px] mr-[10px]">
+    <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginTop:30,marginLeft:20,marginRight:10}}>
       <TouchableOpacity onPress={()=>navigation.goBack()}>
         <Leftarrow width={50} height={50} stroke="black" />
       </TouchableOpacity>
@@ -30,7 +30,7 @@ const AddNotfHeader = () => {
         }}>
         Add locations
       </StyledText>
-      <StyledView className="mr-[40px]"></StyledView>
+      <StyledView style={{marginRight:40}}></StyledView>
     </StyledView>
   </StyledView>
   )

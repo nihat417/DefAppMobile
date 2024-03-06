@@ -16,7 +16,7 @@ const AddReview = () => {
     'https://github.com/tranhonghan/images/blob/main/star_corner.png?raw=true';
 
   return (
-    <StyledView style={{backgroundColor:"#FFF", elevation: 1,}} className="m-[10px] rounded-[8px]">
+    <StyledView style={{backgroundColor:"#FFF", elevation: 1,margin:10,borderRadius:10}}>
       <CloseSvg style={{flex: 1, alignSelf: 'flex-end', margin: 10}} />
       <StyledText style={{fontSize: 18, color: '#FE724C', marginLeft: 10}}>
         Add your review
@@ -24,7 +24,7 @@ const AddReview = () => {
       <StyledText style={{fontSize: 14, color: '#A2A2A2', marginLeft: 10}}>
         Sezar salad, sandwich
       </StyledText>
-      <StyledView className="flex flex-row justify-center mt-[20px]">
+      <StyledView style={{flexDirection:'row',justifyContent:'center',marginTop:20}} >
         {maxraiting.map((item, key) => {
           return (
             <StyledButton
@@ -58,8 +58,7 @@ const AddReview = () => {
           padding: 10,
         }}></StyledInput>
       <StyledButton
-        style={{backgroundColor: '#FF8C03',alignItems: 'center',}}
-        className="ml-[100px] mr-[100px] mt-[10px] mb-[20px] p-[10px] rounded-[20px]">
+        style={{backgroundColor: '#FF8C03',alignItems: 'center',marginLeft:100,marginRight:100,marginTop:10,marginBottom:20,padding:10,borderRadius:20}}>
         <StyledText style={{color:"#FFF"}}>Send</StyledText>
       </StyledButton>
     </StyledView>
