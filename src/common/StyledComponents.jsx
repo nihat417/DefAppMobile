@@ -34,6 +34,10 @@ import LogOutModalSvg from '../assets/svg/LogOutModalSvg';
 import PasswordEyeSvg from '../assets/svg/PasswordEyeSvg';
 import AddLocNotfSvg from '../assets/svg/AddLocNotfSvg';
 import PlusSvg from '../assets/svg/PlusSvg';
+import SignUpSaladIcon from '../assets/svg/SignUpSaladIcon';
+import SignUpSandwitchIcon from '../assets/svg/SignUpSandwitchIcon';
+import SignUpTomatoIcon from '../assets/svg/SignUpTomatoIcon';
+import SignUpGreenEllips from '../assets/svg/SignUpGreenEllips';
 
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
@@ -41,7 +45,11 @@ export const StyledInput = styled(TextInput);
 export const StyledButton = styled(TouchableOpacity);
 export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
-export {Leftarrow,LogOutSvg,DeleteModalSvg,SearchSvg,SubscriptionSvg,LogOutModalSvg,HomeSvg,EditProfileSvg,PersonalInfoSvg,TermsAndConditionsSvg,HelpSvg,SettingsSvg,DeleteAcSvg,
-  ScanSvg,HamburgerSvg,PasswordEyeSvg,EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,RightArrowSvg,ResetPaswSvg,AddLocNotfSvg,PlusSvg,
-  Backsvg,SuccesfullSvg,InvoiceSvg,InvoicesSvg,PaymentsSvg,ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg,AddIconSvg
+export {Leftarrow,LogOutSvg,DeleteModalSvg,SearchSvg,SubscriptionSvg,
+  LogOutModalSvg,HomeSvg,EditProfileSvg,PersonalInfoSvg,TermsAndConditionsSvg,
+  HelpSvg,SettingsSvg,DeleteAcSvg,ScanSvg,HamburgerSvg,PasswordEyeSvg,
+  EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,RightArrowSvg,ResetPaswSvg,
+  AddLocNotfSvg,PlusSvg,Backsvg,SuccesfullSvg,InvoiceSvg,InvoicesSvg,PaymentsSvg,
+  ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg,AddIconSvg,SignUpSaladIcon,
+  SignUpSandwitchIcon,SignUpTomatoIcon,SignUpGreenEllips
 };
