@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {
   StyledView,
   StyledScrollView,
+  StyledButton,
   StyledText,PasswordEyeSvg
 } from '../../common/StyledComponents';
 import {TextInput,TouchableOpacity} from 'react-native';
@@ -22,8 +23,8 @@ const SignUp = () => {
     <StyledView style={{backgroundColor: '#FAFAFA'}}>
       {/* Header */}
       <SignUpHeader />
-      <StyledScrollView style={{height:'65%',backgroundColor:"yellow"}}>
-        <StyledText style={{color:"#184639",fontSize:32,fontWeight:600,marginLeft:20,marginTop:20,marginBottom:20}}>Sign up</StyledText>
+      <StyledScrollView style={{height:'75%',backgroundColor:"#FAFAFA"}}>
+        <StyledText style={{color:"#184639",fontSize:32,fontWeight:600,marginLeft:20,marginTop:10,marginBottom:20}}>Sign up</StyledText>
         <StyledView style={{flexDirection: 'row', justifyContent: 'center'}}>
           <TextInput
             style={{
@@ -34,7 +35,7 @@ const SignUp = () => {
               borderColor: 'trasparent',
               backgroundColor: '#fff',
             }}
-            placeholder="Niko"></TextInput>
+            placeholder="First name"></TextInput>
           <TextInput
             style={{
               width: 180,
@@ -44,7 +45,7 @@ const SignUp = () => {
               borderColor: 'trasparent',
               backgroundColor: '#fff',
             }}
-            placeholder="Niko"></TextInput>
+            placeholder="Last name"></TextInput>
         </StyledView>
         
     
@@ -55,7 +56,7 @@ const SignUp = () => {
             boxStyles={{
               backgroundColor: '#fff',
               width: 80,
-              marginTop: 20,
+              marginTop: 10,
               borderColor: 'transparent',
             }}
             placeholder='055'
@@ -70,10 +71,10 @@ const SignUp = () => {
               elevation: 1,
               borderRadius: 10,
               borderColor: 'transparent',
-              marginTop: 20,
+              marginTop: 10,
               backgroundColor: '#fff',
             }}
-            placeholder="Niko"
+            placeholder="Phone number"
           />
         </StyledView>
         <SelectList
@@ -118,8 +119,23 @@ const SignUp = () => {
                 <PasswordEyeSvg name={isPasswordVisible ? 'eye-off' : 'eye'} size={24} color="black" />
             </TouchableOpacity>
         </StyledView>
-        <StyledText style={{marginLeft:20}}>Already have an account?</StyledText>
-
+        <StyledText style={{marginLeft:20,color:"#184639",fontWeight:400,fontSize:14}}>Already have an account?</StyledText>
+        <StyledButton
+        style={{
+          backgroundColor: '#66B600',
+          borderColor: '#66B600',
+          borderWidth: 1,
+          flexDirection:'row',
+          justifyContent:'center',
+          padding:15,
+          marginLeft:20,
+          marginRight:20,
+          marginTop:10,
+          marginBottom:10,borderRadius:40
+        }}>
+        <StyledText style={{color: '#fff'}}>Sign Up</StyledText>
+        </StyledButton>
+        <StyledText style={{width:300,alignSelf:'center'}}>By clicking Sign up, you agree to our <StyledText style={{color:"#184639"}}>Terms of Use and Privacy Policy</StyledText> </StyledText>
       </StyledScrollView>
     </StyledView>
   );

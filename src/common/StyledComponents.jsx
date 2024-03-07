@@ -38,6 +38,7 @@ import SignUpSaladIcon from '../assets/svg/SignUpSaladIcon';
 import SignUpSandwitchIcon from '../assets/svg/SignUpSandwitchIcon';
 import SignUpTomatoIcon from '../assets/svg/SignUpTomatoIcon';
 import SignUpGreenEllips from '../assets/svg/SignUpGreenEllips';
+import AuthMangoIcon from '../assets/svg/AuthMangoIcon';
 
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
@@ -48,7 +49,7 @@ export const StyledImage = styled(Image);
 export {Leftarrow,LogOutSvg,DeleteModalSvg,SearchSvg,SubscriptionSvg,
   LogOutModalSvg,HomeSvg,EditProfileSvg,PersonalInfoSvg,TermsAndConditionsSvg,
   HelpSvg,SettingsSvg,DeleteAcSvg,ScanSvg,HamburgerSvg,PasswordEyeSvg,
-  EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,RightArrowSvg,ResetPaswSvg,
+  EmptyMenuSvg,LocationSvg,CloseSvg,BigEllipsSvg,RightArrowSvg,ResetPaswSvg,AuthMangoIcon,
   AddLocNotfSvg,PlusSvg,Backsvg,SuccesfullSvg,InvoiceSvg,InvoicesSvg,PaymentsSvg,
   ErrorDetSvg,BackFoodDetailsSvg,CreditCardSvg,AddIconSvg,SignUpSaladIcon,
   SignUpSandwitchIcon,SignUpTomatoIcon,SignUpGreenEllips
