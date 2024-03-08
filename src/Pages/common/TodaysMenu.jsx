@@ -52,8 +52,6 @@ const TodaysMenu = () => {
 
   return (
     <StyledView>
-      {/* header */}
-      <TodaysMenuHeader />
 
       {/* scrollednav */}
       <ScrolledNav />
@@ -61,7 +59,7 @@ const TodaysMenu = () => {
       {/* main */}
       <StyledView
         style={{backgroundColor: '#F8F8F8'}}
-        className="px-5  w-full h-[75.5%]">
+        className="px-5">
         {/* components */}
         <FlatList
           data={data}
@@ -85,9 +83,9 @@ const TodaysMenu = () => {
             padding: 15,
             marginBottom: 10,
             backgroundColor: '#fff',
-          }}
-          className="flex flex-row justify-between ">
-          <StyledView className="flex flex-row">
+            flexDirection:'row',justifyContent:'space-between',marginTop:60
+          }}>
+          <StyledView style={{flexDirection:'row'}}>
             <StyledText
               style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
               className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
@@ -100,7 +98,7 @@ const TodaysMenu = () => {
             </StyledText>
           </StyledView>
           <StyledText
-            style={{color: '#000', fontWeight: 700, fontSize: 15}}
+            style={{color: '#000', fontWeight: 700, fontSize: 15,}}
             className="p-[5px] font-bold">
             $ 10.90
           </StyledText>
