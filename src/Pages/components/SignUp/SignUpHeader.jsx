@@ -12,11 +12,11 @@ import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 
 const SignUpHeader = () => {
-    // const navigation = useNavigation();
+    const navigation = useNavigation();
   return (
     <StyledView>
     <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginTop:30,marginLeft:20,marginRight:10}}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.goBack()}>
         <Leftarrow width={50} height={50} stroke="black" />
       </TouchableOpacity>
       <StyledText></StyledText>

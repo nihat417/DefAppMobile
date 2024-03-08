@@ -16,7 +16,6 @@ const SignInHeader = () => {
     <StyledView>
     <StyledView style={{flexDirection:'row',justifyContent:'space-between',marginTop:30,marginLeft:20,marginRight:10}}>
       <TouchableOpacity>
-        <Leftarrow width={50} height={50} stroke="black" />
       </TouchableOpacity>
       <StyledText></StyledText>
       <StyledView></StyledView>

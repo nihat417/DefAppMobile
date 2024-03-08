@@ -3,26 +3,33 @@ import React from 'react';
 import HomePage from '../../common/HomePage';
 import Barcode from '../../common/Barcode';
 import Profile from '../../common/Profile';
-
-
 import TodaysMenu from '../../common/TodaysMenu';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import NavTabMenu from '../../components/Navigation/NavTabMenu';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import NavTabMenu from '../../components/Navigation/NavTabMenu';
 import Details from '../../common/Details';
 import ProfileEdit from '../../common/ProfileEdit';
 import Payment from '../../common/Payment';
 import AddLocations from '../../common/AddLocations';
 import SettingsPage from '../../common/SettingsPage';
 
-
 const Tabs = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const MenuStack = createNativeStackNavigator();
 
 //stacks
+
+const MyAuthStack = () =>{
+  return(
+    <AuthStack.Navigator screenOptions={{ headerShown: false }}>
+      <AuthStack.Screen name='SignIn' component={SignIn}/>
+      <AuthStack.Screen name='SignUp' component={SignUp}/>
+    </AuthStack.Navigator>
+  );
+}
 
 const MyHomeStack = () =>{
     return (

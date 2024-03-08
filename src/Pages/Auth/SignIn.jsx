@@ -7,8 +7,10 @@ import {
 } from '../../common/StyledComponents';
 import {TextInput,TouchableOpacity} from 'react-native';
 import SignInHeader from '../components/SignIn/SignInHeader';
+import { useNavigation } from '@react-navigation/native';
 
 const SignIn = () => {
+    const navigation = useNavigation();
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (
@@ -36,7 +38,9 @@ const SignIn = () => {
                 <PasswordEyeSvg name={isPasswordVisible ? 'eye-off' : 'eye'} size={24} color="black" />
             </TouchableOpacity>
         </StyledView>
-        <StyledText style={{marginLeft:20,color:"#184639",fontWeight:400,fontSize:14}}>Already have an account?</StyledText>
+        <TouchableOpacity onPress={()=>navigation.navigate('SignUp')}>
+          <StyledText style={{marginLeft:20,color:"#184639",fontWeight:400,fontSize:14}}>Already have an account?</StyledText>
+        </TouchableOpacity>
         <StyledButton
         style={{
           backgroundColor: '#66B600',
@@ -47,7 +51,7 @@ const SignIn = () => {
           padding:15,
           marginLeft:20,
           marginRight:20,
-          marginTop:10,
+          marginTop:40,
           marginBottom:10,borderRadius:40
         }}>
         <StyledText style={{color: '#fff'}}>Sign Up</StyledText>

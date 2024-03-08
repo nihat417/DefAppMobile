@@ -1,13 +1,15 @@
 import React from 'react';
 import {StyledView,StyledText,SubscriptionSvg,HomeSvg,ScanSvg,HamburgerSvg,} from '../../../common/StyledComponents';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity,Platform } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 const NavTabMenu = ({ state, navigation }) => {
   const { routes, index } = state;
   const currentRouteName = routes[index].name;
 
   return (
-    <StyledView style={{ borderColor: "#ECF3F9", elevation: 1 }}>
+    <SafeAreaView style={{ borderColor: "#ECF3F9", elevation: 1}} className={`${Platform.OS === 'ios'?'pb-[20px]':''}`} edges={['right','top','left']}>
       {/* navmenu */}
       <StyledView style={{ backgroundColor: 'fff' }} className="flex flex-row justify-between">
         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
@@ -82,7 +84,7 @@ const NavTabMenu = ({ state, navigation }) => {
           </StyledView>
         </TouchableOpacity>
       </StyledView>
-    </StyledView>
+    </SafeAreaView>
   );
 };
 

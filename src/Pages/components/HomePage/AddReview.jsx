@@ -7,6 +7,8 @@ import {
   StyledInput,
   StyledImage,
 } from '../../../common/StyledComponents';
+
+
 const AddReview = () => {
   const [defRaiting, setDefRaiting] = useState(2);
   const [maxraiting, setMaxRaiting] = useState([1, 2, 3, 4, 5]);
