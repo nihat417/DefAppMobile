@@ -11,7 +11,6 @@ import SettingPageItems from '../components/SettingsPage/SettingPageItems';
 const SettingsPage = () => {
   return (
     <StyledView>
-      <SettingsHeader />
       <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[82%]">
         {/* setting components */}
         <SettingPageItems />

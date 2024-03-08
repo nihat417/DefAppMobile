@@ -21,10 +21,10 @@ const HomeHeader = () => {
       <LocationSvg
         width={30}
         height={60}
-        style={{marginLeft: 20, marginTop: 5}}
+        style={{marginLeft: 20, marginTop: 30}}
       />
       <StyledText
-        style={{fontSize: 20, color: '#184639', marginRight: 20, marginTop: 2}}>
+        style={{fontSize: 20, color: '#184639', marginRight: 20,  marginTop: 30}}>
         Caspian Plaza
       </StyledText>
     </StyledView>

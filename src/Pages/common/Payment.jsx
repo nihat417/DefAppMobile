@@ -13,7 +13,6 @@ import PaymentsHistory from '../components/Payment/PaymentsHistory';
 const Payment = () => {
   return (
     <StyledView>
-      <PaymentsHeader />
       <StyledScrollView style={{height: '90%', backgroundColor: '#fff'}}>
         {/* mycardsSection */}
         <MyCards />

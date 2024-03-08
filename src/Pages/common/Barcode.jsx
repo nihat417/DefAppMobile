@@ -23,9 +23,7 @@ const Barcode = () => {
             fontWeight: 500,
             alignSelf: 'center',
             marginTop: 40,
-          }}>
-          {' '}
-          Scan the barcode displayed on the meal{' '}
+          }}>Scan the barcode displayed on the meal
         </StyledText>
         <QRCodeScanner
           onRead={this.onSuccess}

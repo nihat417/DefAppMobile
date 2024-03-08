@@ -13,7 +13,7 @@ const AddLocations = () => {
   return (
     <StyledView>
 
-      <StyledScrollView style={{backgroundColor: '#F8F8F8', height: '82%'}}>
+      <StyledScrollView style={{backgroundColor: '#F8F8F8'}}>
         {/* addnotfItems */}
         <AddNotfItems />
       </StyledScrollView>

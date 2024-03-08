@@ -24,19 +24,11 @@ const MenuStack = createNativeStackNavigator();
 
 //stacks
 
-const MyAuthStack = () => {
-  return (
-    <AuthStack.Navigator screenOptions={{headerShown: false}}>
-      <AuthStack.Screen name="SignIn" component={SignIn} />
-      <AuthStack.Screen name="SignUp" component={SignUp} />
-    </AuthStack.Navigator>
-  );
-};
 
 const MyHomeStack = () => {
   return (
-    <HomeStack.Navigator screenOptions={{headerShown: false}}>
-      <HomeStack.Screen name="Home" component={HomePage} />
+    <HomeStack.Navigator>
+      <HomeStack.Screen options={{header:()=><HomeHeader/>}} name="Home" component={HomePage} />
       <HomeStack.Screen name="TodaysMenu" component={TodaysMenu} />
       <HomeStack.Screen name="Details" component={Details} />
     </HomeStack.Navigator>
@@ -47,8 +39,7 @@ const MyMenuStack = () => {
   return (
     <MenuStack.Navigator>
       <MenuStack.Screen
-        options={{header: () => <HomeHeader />}}
-        name="MainMenu"
+        name="Menu"
         component={Profile}
       />
       <MenuStack.Screen
@@ -56,13 +47,15 @@ const MyMenuStack = () => {
         name="ProfileEdit"
         component={ProfileEdit}
       />
-      <MenuStack.Screen name="PaymentsPage" component={Payment} />
+      <MenuStack.Screen options={{header:()=><Header title="Payment"/>}} name="PaymentsPage" component={Payment} />
       <MenuStack.Screen
         options={{header: () => <Header title="Add Locations" />}}
         name="AddLocationsPage"
         component={AddLocations}
       />
-      <MenuStack.Screen name="SettingsPage" component={SettingsPage} />
+      <MenuStack.Screen
+       options={{header:()=> <Header title="Settings"/>}}
+       name="SettingsPage" component={SettingsPage} />
     </MenuStack.Navigator>
   );
 };
