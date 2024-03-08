@@ -9,7 +9,7 @@ const NavTabMenu = ({ state, navigation }) => {
   const currentRouteName = routes[index].name;
 
   return (
-    <SafeAreaView style={{ borderColor: "#ECF3F9", elevation: 1}} className={`${Platform.OS === 'ios'?'pb-[20px]':''}`} edges={['right','top','left']}>
+    <StyledView style={{ borderColor: "#ECF3F9", elevation: 1}}>
       {/* navmenu */}
       <StyledView style={{ backgroundColor: 'fff' }} className="flex flex-row justify-between">
         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
@@ -84,7 +84,7 @@ const NavTabMenu = ({ state, navigation }) => {
           </StyledView>
         </TouchableOpacity>
       </StyledView>
-    </SafeAreaView>
+    </StyledView>
   );
 };
 

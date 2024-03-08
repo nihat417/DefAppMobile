@@ -12,7 +12,6 @@ import AddNotfItems from '../components/AddNotification/AddNotfItems';
 const AddLocations = () => {
   return (
     <StyledView>
-      <AddNotfHeader />
 
       <StyledScrollView style={{backgroundColor: '#F8F8F8', height: '82%'}}>
         {/* addnotfItems */}

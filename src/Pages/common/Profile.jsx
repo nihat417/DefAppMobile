@@ -24,8 +24,7 @@ const Profile = () => {
 
   return (
     <StyledView>
-      <ProfileHeader />
-      <StyledScrollView style={{backgroundColor: '#FFF'}} className="h-[90%]">
+      <StyledScrollView style={{backgroundColor: '#FFF'}} >
         <ProfileItems />
 
         <TouchableOpacity

@@ -10,7 +10,7 @@ import {
 } from '../../common/StyledComponents';
 import {FlatList, TextInput} from 'react-native';
 import {SelectList} from 'react-native-dropdown-select-list';
-import ProfileEditHeader from '../components/ProfileEdit/ProfileEditHeader';
+import ProfileEditHeader from '../components/ProfileEdit/Header';
 import NavTabMenu from '../components/Navigation/NavTabMenu';
 
 const ProfileEdit = () => {
@@ -28,7 +28,6 @@ const ProfileEdit = () => {
 
   return (
     <StyledView>
-      <ProfileEditHeader />
       <StyledView style={{backgroundColor: '#F8F8F8'}} className="h-[82%]">
         <StyledView style={{flexDirection: 'row', margin: 20}}>
           <StyledView style={{marginLeft: 10}}>
