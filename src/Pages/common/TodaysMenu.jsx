@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyledView,
   StyledScrollView,
   StyledText,
   StyledImage,
 } from '../../common/StyledComponents';
-import {FlatList} from 'react-native';
+import {FlatList, TouchableOpacity} from 'react-native';
 
 import EmptyMenu from '../components/TodaysMenu/EmptyMenu';
-import TodaysMenuHeader from '../components/TodaysMenu/TodaysMenuHeader';
 import ScrolledNav from '../components/TodaysMenu/ScrolledNav';
 import TodaysMenuItems from '../components/TodaysMenu/TodaysMenuItems';
+import { useStorage } from '../../common/hooks/useStorage';
 // import Svg, {SvgXml} from 'react-native-svg';
 
 const TodaysMenu = () => {
+  const [basket,setBasket]= useStorage('basket',[]);
+  useEffect(()=>{
+    console.log(basket);
+  },[]);
   // static data
   const data = [
     {
@@ -74,35 +78,37 @@ const TodaysMenu = () => {
       {/* vieworder */}
       <StyledView style={{backgroundColor:'#f8f8f8'}}
         className="pl-[20px] pr-[20px]">
-        <StyledView
-          style={{
-            borderColor: '#FF8C03',
-            borderWidth: 1,
-            borderStyle: 'dotted',
-            borderRadius: 10,
-            padding: 15,
-            marginBottom: 10,
-            backgroundColor: '#fff',
-            flexDirection:'row',justifyContent:'space-between',marginTop:60
-          }}>
-          <StyledView style={{flexDirection:'row'}}>
-            <StyledText
-              style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
-              className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
-              2x
-            </StyledText>
-            <StyledText
-              style={{color: '#FF8C03', fontWeight: 500}}
-              className="p-[5px]">
-              View order
-            </StyledText>
-          </StyledView>
-          <StyledText
-            style={{color: '#000', fontWeight: 700, fontSize: 15,}}
-            className="p-[5px] font-bold">
-            $ 10.90
-          </StyledText>
-        </StyledView>
+          <TouchableOpacity onPress={()=>{setBasket();}}>
+            <StyledView
+              style={{
+                borderColor: '#FF8C03',
+                borderWidth: 1,
+                borderStyle: 'dotted',
+                borderRadius: 10,
+                padding: 15,
+                marginBottom: 10,
+                backgroundColor: '#fff',
+                flexDirection:'row',justifyContent:'space-between',marginTop:60
+              }}>
+              <StyledView style={{flexDirection:'row'}}>
+                <StyledText
+                  style={{borderWidth: 1, color: '#FF8C03', fontWeight: 500}}
+                  className="border rounded-[10px] p-[5px] pl-[10px] pr-[10px] border-yellow-500">
+                  2x
+                </StyledText>
+                <StyledText
+                  style={{color: '#FF8C03', fontWeight: 500}}
+                  className="p-[5px]">
+                  View order
+                </StyledText>
+              </StyledView>
+              <StyledText
+                style={{color: '#000', fontWeight: 700, fontSize: 15,}}
+                className="p-[5px] font-bold">
+                $ 10.90
+              </StyledText>
+            </StyledView>
+          </TouchableOpacity>
       </StyledView>      
     </StyledView>
   );
