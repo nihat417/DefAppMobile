@@ -28,8 +28,6 @@ Here are some screenshots of the app:
 ### Checkout Page
 ![Checkout Page](https://www.dropbox.com/scl/fi/4cj4ii9ra5qoj4slhs18a/foodcheckout.png?rlkey=w5c5ak6nry1h2jo3020tjwkpi&raw=1)
 
-### Successful Order Details Page
-![Successful Order Details Page](https://www.dropbox.com/scl/fi/sc5fauw22tg8bl7un8v82/foodSuccesfull-details.png?rlkey=llc2410rlatqa4sl5qtyzshhc&raw=1)
 
 ## Features
 - User Authentication
