@@ -1,4 +1,42 @@
+# Food Delivery App
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+
+This is a Food Delivery app developed with modern web technologies. The app includes features like user authentication, profile management, checkout, and successful order notifications.
+
+## Screenshots
+
+Here are some screenshots of the app:
+
+### Sign In Page
+![Sign In Page](https://www.dropbox.com/scl/fi/hi2ir7bcyksjvn27v3235/foodSignin.png?rlkey=d0f14lckk82a05eo96zrhnk2n&raw=1)
+
+### Sign In Alternate Page
+![Sign In Alternate Page](https://www.dropbox.com/scl/fi/78eiai8zicuyhjuh6mjtr/foodsign-in.png?rlkey=sfba7klorpex502qajy7ogag0&raw=1)
+
+### Verification Page
+![Verification Page](https://www.dropbox.com/scl/fi/5ykamb3ituxa5t0as18ik/foodvertf.png?rlkey=hq1yxee7eg2de4c749n9fch9a&raw=1)
+
+### Profile Page
+![Profile Page](https://www.dropbox.com/scl/fi/u4nwz0exbdg3bkr6hn87i/foodprofile.png?rlkey=yutq5pl451zzot0p3bkb7ovi4&raw=1)
+
+### Edit Profile Page
+![Edit Profile Page](https://www.dropbox.com/scl/fi/j45kwwr3hc4hdlbikzdwh/foodprofile-edit.png?rlkey=3810pp45t5e2buz6ly4f83744&raw=1)
+
+### Forgot Password Page
+![Forgot Password Page](https://www.dropbox.com/scl/fi/fpyfo60mljpfyrlbvr430/foodforgot.png?rlkey=f76ltbje8bp1b22s4mz4nixw5&raw=1)
+
+### Checkout Page
+![Checkout Page](https://www.dropbox.com/scl/fi/4cj4ii9ra5qoj4slhs18a/foodcheckout.png?rlkey=w5c5ak6nry1h2jo3020tjwkpi&raw=1)
+
+### Successful Order Details Page
+![Successful Order Details Page](https://www.dropbox.com/scl/fi/sc5fauw22tg8bl7un8v82/foodSuccesfull-details.png?rlkey=llc2410rlatqa4sl5qtyzshhc&raw=1)
+
+## Features
+- User Authentication
+- Profile Management
+- Checkout Process
+- Order Notifications
+
 
 # Getting Started
 
